@@ -257,7 +257,7 @@ body {
 }
 .home .second-section .three-column .main-block {
   display: block;
-  border: 2px dashed #5e5e5e;
+  border: 3px dashed #5e5e5e;
   padding: 20px 20px;
   background: #faf6f6;
 }
