@@ -437,35 +437,26 @@ body {
   background: url("../images/aboutbg.jpg");
   background-size: 1400px;
 }
-.tabs {
-  height: 47px;
+.about .about-first-section .tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-@media (min-width: 1280px) {
-  .tabs {
-    width: 1280px;
-  }
+.about .about-first-section .topics .title {
+  font-size: 2rem;
 }
-.tabs .topics .title {
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-.tabs .topics .tab {
+.about .about-first-section .topics .tab {
   margin: 0 5px;
   padding: 2px 10px;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 2rem;
+  color: black;
   cursor: pointer;
-  font-weight: bold;
 }
-.tabs .topics .tab:hover {
+.about .about-first-section .topics .active-tab {
   text-decoration: underline;
 }
-.tabs .topics .active-tab {
-  border: 2px solid black;
-}
 .cards-container {
-  margin-top: 16px;
+  display: flex;
   flex-wrap: wrap;
 }
 @media (min-width: 1200px) {
@@ -473,30 +464,12 @@ body {
     width: 1200px;
   }
 }
-.cards-container .card {
-  background-color: black;
-  width: 380px;
-  margin-bottom: 16px;
-  padding: 24px;
-}
-.cards-container .card .headline {
+.cards-container .card .name {
   font-size: 25px;
-  font-family: Didot, serif;
 }
 .cards-container .card .author {
   margin-top: 15px;
 }
 .cards-container .card .author .img-container {
-  padding-right: 10px;
-  border-right: 1px solid black;
-  height: 40px;
-}
-.cards-container .card .author .img-container img {
-  width: 40px;
-}
-.cards-container .card .author span {
-  padding-left: 10px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: bold;
+  background-color: #fbb403;
 }
