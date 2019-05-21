@@ -267,6 +267,13 @@ footer {
   background-position: center;
   height: 100vh;
 }
+.home .third-section .half-content {
+  display: flex;
+  justify-content: center;
+}
+.home .third-section .half-content .class-img img {
+  width: 40%;
+}
 .fade-in-top {
   -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -456,19 +463,22 @@ footer {
 .about .about-first-section .tabs .topics .active-tab {
   text-decoration: underline;
 }
-.cards-container {
+.about .about-first-section .cards-container {
   display: flex;
+  justify-content: center;
 }
-.card {
-  width: 25%;
+.about .about-first-section .card {
+  padding: 50px 50px;
 }
-.card .name {
+.about .about-first-section .card .name {
   font-size: 25px;
+  text-align: center;
 }
-.card .img-container {
+.about .about-first-section .card .img-container {
   background-color: #fbb403;
+  margin: 5px 0 0 0;
 }
-.card .img-container img {
-  width: 200px;
+.about .about-first-section .card .img-container img {
+  width: 300px;
   padding: 10px 10px;
 }
