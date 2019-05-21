@@ -1,8 +1,10 @@
 // Home Content
+body {
+  scroll-snap-type: y mandatory;
+}
 
 .home {
   width: 100%;
-
   @media @phone {
     margin: auto;
     width: 98%;
@@ -12,6 +14,7 @@
     background-image: url("../images/s1.jpg");
     background-position: center;
     height: 100vh;
+    scroll-snap-align: start;
 
     .slide-in-fwd-left {
       margin: 160px 0 0 280px;
@@ -24,7 +27,8 @@
 
   .second-section {
     background-color: @main-blue;
-    height: 101vh;
+    height: 100vh;
+    scroll-snap-align: start;
 
     .icon {
       margin: 0 80px 30px 80px;
@@ -52,6 +56,7 @@
   .third-section {
     background: url("../images/s3.jpg");
     background-position: center;
-    height: 101vh;
+    height: 100vh;
+    scroll-snap-align: start;
   }
 }
