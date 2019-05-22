@@ -1,7 +1,4 @@
 // Home Content
-body {
-  scroll-snap-type: y mandatory;
-}
 
 .home {
   width: 100%;
@@ -14,7 +11,6 @@ body {
     background-image: url("../images/s1.jpg");
     background-position: center;
     height: 100vh;
-    scroll-snap-align: start;
 
     .slide-in-fwd-left {
       margin: 130px 0 0 280px;
@@ -36,7 +32,6 @@ body {
   .second-section {
     background-color: @main-blue;
     height: 100vh;
-    scroll-snap-align: start;
 
     .icon {
       margin: 0 75px 30px 85px;
@@ -71,6 +66,15 @@ body {
     background: url("../images/s3.jpg");
     background-position: center;
     height: 100vh;
-    scroll-snap-align: start;
+
+    .half-content {
+      display: flex;
+      justify-content: center;
+      .class-img {
+        img {
+          width: 40%;
+        }
+      }
+    }
   }
 }
