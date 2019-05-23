@@ -12,14 +12,18 @@ body {
   .first-section {
     background-image: url("../images/s1.jpg");
     background-position: center;
+    background-size: 100%;
     height: 100vh;
 
+    @media @phone {
+    }
+
     .slide-in-fwd-left {
-      margin: 130px 0 0 280px;
+      margin: 7% 0 0 15%;
     }
 
     .slide-in-fwd-right {
-      margin: 0 0 0 630px;
+      margin: 0 0 0 48%;
     }
 
     .btn {
@@ -27,7 +31,7 @@ body {
       font-size: 3rem;
       font-weight: bolder;
       text-align: center;
-      margin: 60px auto;
+      margin: 6% auto;
 
       a {
         color: black;
@@ -37,6 +41,7 @@ body {
 
   .second-section {
     background-color: @main-blue;
+    background-size: 100%;
     height: 101vh;
 
     .icon {
@@ -51,12 +56,12 @@ body {
     .three-column {
       display: flex;
       justify-content: space-evenly;
-      padding: 130px 0 200px 0;
+      padding: 12% 0 15% 0;
 
       .main-block {
         display: block;
         border: 3px dashed @main-grey;
-        padding: 20px 20px;
+        padding: 1.5% 1.5%;
         background: @white;
       }
 
@@ -72,14 +77,19 @@ body {
     background: url("../images/s3.jpg");
     background-position: center;
     height: 100vh;
+    display: flex;
+    justify-content: center;
 
-    .half-content {
-      display: flex;
-      justify-content: center;
-      .class-img {
-        img {
-          width: 40%;
-        }
+    .third-text {
+      width: 1000px;
+
+      p {
+        background: rgba(1, 1, 1, 0.2);
+        margin: 20% 0;
+        padding: 3% 3%;
+        font-size: 2.3rem;
+        color: black;
+        text-align: center;
       }
     }
   }
