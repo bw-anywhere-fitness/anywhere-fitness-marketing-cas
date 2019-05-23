@@ -1,37 +1,76 @@
 // Home Content
-
+body {
+  overflow-x: hidden;
+}
 .home {
   width: 100%;
   @media @phone {
     margin: auto;
     width: 98%;
   }
-
-  .first-section {
+  .parallax {
     background-image: url("../images/s1.jpg");
+    height: 101%;
+    background-attachment: fixed;
     background-position: center;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    .slide-in-fwd-left {
-      margin: 130px 0 0 280px;
-    }
+    .first-section {
+      //background-image: url("../images/s1.jpg");
+      //background-position: center;
+      //background-size: 100%;
+      //height: 100vh;
 
-    .slide-in-fwd-right {
-      margin: 0 0 0 630px;
-    }
+      @media @phone {
+        height: 100%;
+        background-repeat: no-repeat;
+      }
 
-    .btn {
-      .button(black, 10px);
-      font-size: 3rem;
-      font-weight: bolder;
-      text-align: center;
-      margin: 60px auto;
+      .slide-in-fwd-left {
+        margin: 7% 0 0 15%;
+
+        @media @phone {
+          font-size: 2.5rem;
+          margin: 10% 0 0 18%;
+        }
+      }
+
+      .slide-in-fwd-right {
+        margin: 0 0 0 48%;
+        @media @phone {
+          font-size: 2.5rem;
+        }
+      }
+
+      .btn {
+        .button(black, 10px);
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+        margin: 6% auto;
+
+        @media @phone {
+          .button(black, 5px);
+          font-size: 1rem;
+          margin: 3% auto;
+        }
+
+        a {
+          color: black;
+        }
+      }
     }
   }
 
   .second-section {
     background-color: @main-blue;
-    height: 100vh;
+    background-size: 100%;
+    height: 101vh;
+
+    @media @phone {
+      height: 100%;
+    }
 
     .icon {
       margin: 0 75px 30px 85px;
@@ -40,24 +79,47 @@
       border: 2px solid black;
       border-radius: 20px;
       background: @main-blue;
+
+      @media @phone {
+        width: 30%;
+        margin: auto 35%;
+        border-radius: 15%;
+      }
     }
 
     .three-column {
       display: flex;
       justify-content: space-evenly;
-      padding: 130px 0 200px 0;
+      padding: 12% 0 15% 0;
+
+      @media @phone {
+        display: block;
+        justify-content: center;
+      }
 
       .main-block {
         display: block;
         border: 3px dashed @main-grey;
-        padding: 20px 20px;
+        padding: 1.5% 1.5%;
         background: @white;
+
+        @media @phone {
+          width: 75%;
+          margin: 2% auto;
+          padding: 1% 1%;
+          border: 1.5px dashed @main-grey;
+        }
       }
 
       .text-block {
         width: 300px;
         font-size: 3rem;
         text-align: center;
+
+        @media @phone {
+          width: 100%;
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -66,13 +128,41 @@
     background: url("../images/s3.jpg");
     background-position: center;
     height: 100vh;
+    display: flex;
+    justify-content: center;
 
-    .half-content {
-      display: flex;
-      justify-content: center;
-      .class-img {
-        img {
-          width: 40%;
+    @media @phone {
+      height: 100%;
+      padding: 12% 0;
+    }
+
+    .third-text {
+      width: 1000px;
+
+      @media @phone {
+        width: 75%;
+      }
+
+      p {
+        background: rgba(1, 1, 1, 0.3);
+        margin: 18% 0;
+        padding: 3% 3%;
+        font-size: 2.4rem;
+        color: @white;
+        text-align: center;
+        border: 2px dashed black;
+
+        @media @phone {
+          margin: 3% auto;
+          font-size: 1.4rem;
+        }
+
+        a {
+          font-size: 2.5rem;
+
+          @media @phone {
+            font-size: 2rem;
+          }
         }
       }
     }
