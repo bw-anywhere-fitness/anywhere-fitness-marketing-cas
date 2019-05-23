@@ -2,25 +2,35 @@
 
 .nav-content {
   max-width: 75%;
-  width: 100%;
   margin: 0 auto;
   padding: 3% 0;
   display: flex;
   justify-content: space-between;
+
+  @media @phone {
+    padding: 2% 2%;
+    display: block;
+  }
 
   nav {
     display: flex;
     margin: 0 2% 0 0;
     padding: 1% 0;
 
+    @media @phone {
+      display: flex;
+      padding: 2% 0;
+      margin: 0 0 0 42%;
+    }
+
     a {
       padding: 0px 15px;
       font-size: 2rem;
       color: #faf6f6;
-    }
-  }
 
-  @media @phone {
-    padding: 2% 2%;
+      @media @phone {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

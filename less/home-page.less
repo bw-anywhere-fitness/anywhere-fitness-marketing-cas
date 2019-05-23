@@ -16,14 +16,24 @@ body {
     height: 100vh;
 
     @media @phone {
+      height: 100%;
+      background-repeat: no-repeat;
     }
 
     .slide-in-fwd-left {
       margin: 7% 0 0 15%;
+
+      @media @phone {
+        font-size: 2.5rem;
+        margin: 5% 0 0 18%;
+      }
     }
 
     .slide-in-fwd-right {
       margin: 0 0 0 48%;
+      @media @phone {
+        font-size: 2.5rem;
+      }
     }
 
     .btn {
@@ -32,6 +42,12 @@ body {
       font-weight: bolder;
       text-align: center;
       margin: 6% auto;
+
+      @media @phone {
+        .button(black, 5px);
+        font-size: 1rem;
+        margin: 3% auto;
+      }
 
       a {
         color: black;
@@ -44,6 +60,10 @@ body {
     background-size: 100%;
     height: 101vh;
 
+    @media @phone {
+      height: 100%;
+    }
+
     .icon {
       margin: 0 75px 30px 85px;
       width: 120px;
@@ -51,6 +71,11 @@ body {
       border: 2px solid black;
       border-radius: 20px;
       background: @main-blue;
+
+      @media @phone {
+        width: 30%;
+        margin: auto 35%;
+      }
     }
 
     .three-column {
@@ -58,17 +83,34 @@ body {
       justify-content: space-evenly;
       padding: 12% 0 15% 0;
 
+      @media @phone {
+        display: block;
+        justify-content: center;
+      }
+
       .main-block {
         display: block;
         border: 3px dashed @main-grey;
         padding: 1.5% 1.5%;
         background: @white;
+
+        @media @phone {
+          width: 60%;
+          margin: 2% auto;
+          padding: 1% 1%;
+          border: 1.5px dashed @main-grey;
+        }
       }
 
       .text-block {
         width: 300px;
         font-size: 3rem;
         text-align: center;
+
+        @media @phone {
+          width: 100%;
+          font-size: 2rem;
+        }
       }
     }
   }
@@ -84,12 +126,17 @@ body {
       width: 1000px;
 
       p {
-        background: rgba(1, 1, 1, 0.2);
-        margin: 20% 0;
+        background: rgba(1, 1, 1, 0.3);
+        margin: 18% 0;
         padding: 3% 3%;
-        font-size: 2.3rem;
-        color: black;
+        font-size: 2.4rem;
+        color: @white;
         text-align: center;
+        border: 2px dashed black;
+
+        a {
+          font-size: 2.5rem;
+        }
       }
     }
   }
