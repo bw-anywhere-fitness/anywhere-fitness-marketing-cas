@@ -16,6 +16,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media @phone {
+      height: 100%;
+    }
+
     .first-section {
       //background-image: url("../images/s1.jpg");
       //background-position: center;
@@ -31,15 +35,15 @@ body {
         margin: 7% 0 0 15%;
 
         @media @phone {
-          font-size: 2.5rem;
-          margin: 10% 0 0 18%;
+          font-size: 4rem;
+          margin: 4% 0 0 18%;
         }
       }
 
       .slide-in-fwd-right {
         margin: 0 0 0 48%;
         @media @phone {
-          font-size: 2.5rem;
+          font-size: 4rem;
         }
       }
 
@@ -52,8 +56,8 @@ body {
 
         @media @phone {
           .button(black, 5px);
-          font-size: 1rem;
-          margin: 3% auto;
+          font-size: 2.4rem;
+          margin: 6% auto;
         }
 
         a {
@@ -106,7 +110,7 @@ body {
         @media @phone {
           width: 75%;
           margin: 2% auto;
-          padding: 1% 1%;
+          padding: 2% 0;
           border: 1.5px dashed @main-grey;
         }
       }
@@ -161,7 +165,7 @@ body {
           font-size: 2.5rem;
 
           @media @phone {
-            font-size: 2rem;
+            font-size: 1.6rem;
           }
         }
       }
