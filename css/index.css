@@ -202,6 +202,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+body {
+  overflow-x: hidden;
+}
 .home {
   width: 100%;
 }
@@ -234,9 +237,12 @@ footer {
   text-align: center;
   margin: 60px auto;
 }
+.home .first-section .btn a {
+  color: black;
+}
 .home .second-section {
   background-color: #6fc7f0;
-  height: 100vh;
+  height: 101vh;
 }
 .home .second-section .icon {
   margin: 0 75px 30px 85px;
